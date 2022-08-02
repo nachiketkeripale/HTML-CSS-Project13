@@ -1,0 +1,85 @@
+var fname = document.getElementById("fname");
+
+var lname = document.getElementById("lname");
+
+var email = document.getElementById("u-email");
+
+var Password = document.getElementById("pass");
+
+var cPassword = document.getElementById("copass");
+
+var MAIL_FORMAT = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+var paswd = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+
+let R_DATA_ARRAY = [];
+
+let getData = localStorage.getItem("RegisterData");
+
+
+document
+
+    .getElementById("regbutton")
+
+    .addEventListener("click", function saveData(event) {
+
+        console.log("clicK");
+        if (email.value.match(MAIL_FORMAT)) {
+
+            if (Password.value.match(paswd) && Password.value == cPassword.value) {
+
+                storeData();
+            }
+            else {
+                document.getElementById("message").innerHTML =
+
+                    "**confirm-password and password is not match";
+
+                event.preventDefault();
+            }
+
+        }
+        else {
+            document.getElementById("emailError").innerHTML =
+
+                "**Enter Valid Email!";
+
+            event.preventDefault();
+        }
+
+        function storeData() {
+
+            console.log("Update..");
+
+
+
+            if (getData) {
+
+                R_DATA_ARRAY = JSON.parse(getData);
+
+            }
+
+            R_DATA_ARRAY.push({
+
+                fname: fname.value,
+
+                lname: lname.value,
+
+                email: email.value,
+
+                Password: Password.value,
+
+                cPassword: cPassword.value,
+
+                id: Math.random(1),
+
+            });
+
+            localStorage.setItem("RegisterData", JSON.stringify(R_DATA_ARRAY));
+
+            // <--Convert a object into a string-->
+
+            window.location.href = "window.location.host/index.html";        
+        }
+
+    });

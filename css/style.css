@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+.main-container {
+    background-color: #7030cc;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav-container {
+    height: 20vh;
+    width: 100%;
+   
+}
+
+nav {
+    margin-left: 50px;
+    display: flex;
+}
+
+.nav-logo {
+    margin-top: 20px;
+    float: left;
+    width: 20%;
+   
+}
+
+.nav-logo img{
+    width: 100px;
+}
+
+.nav-list {
+    margin-top: 30px;
+    width: 80%; 
+    float: left;
+    margin-right: 150px;
+    color: #fff;
+}
+
+.nav-list .list {
+    justify-content: center;
+    align-items: baseline;
+    display: flex;
+    gap:40px;
+    float: right;
+}
+
+.list li {
+    list-style: none;
+    color: #fff;
+}
+
+.list li a:hover {
+    color:#1bbcef;
+    border-bottom: 1px solid #fff;
+}
+
+.list a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.list button {
+    padding: 15px 40px;
+    color: #fff;
+    background-color: #1bbcef;
+    border: none;
+}
+
+.hero-left {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-heading {
+    margin-left: 50px;
+    font-size: 80px;
+    color: #fff;
+}
+
+
+.description {
+    margin-top: 20px;
+    margin-left: 50px;
+    color: #fff;
+    font-size: 22px;
+    font-family: "Roboto";
+    font-weight: 100;
+
+}
+
+.hero-right {
+    width: 50%;
+    float: right;
+}
+
+.hero-right img {
+    margin-left: 50px;
+    width: 600px;
+}
+
+.section1 {
+    width: 100%;
+    display: flex;
+}
+
+.section1-left {
+    float: left;
+    width: 50%;
+    margin-left: 50px;
+}
+
+.section1-left img {
+    width: 700px;
+}
+
+.section1-right {
+    float: right;
+    width: 50%;
+    margin-right: 50px;
+}
+
+.section1-heading {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 50px 0 150px;
+    padding: 10px;
+}
+
+
+.content img {
+    width: 20px;
+}
+
+.content-description {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.content-description h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.content-description p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.section2 {
+    margin-top: 20px;
+   
+    display: flex;
+    flex-direction: column;
+}
+
+.section2-heading {
+    margin: 30px auto auto auto;
+    display: block;
+    width: 500px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.cards {
+    margin: 50px 150px 50px 150px;
+    display: flex;
+    gap:10px;
+}
+
+.card-active {
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 15%) 4px 4px 3.6px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-logo {
+    margin: 20px;
+    border-radius: 100%;
+    display: inline-block;   
+}
+
+.pink {
+    background-color: #fc535333;
+}
+
+.green {
+    background-color: #5fc4a622;
+}
+
+.purple {
+    background-color: #b461d722;
+}
+
+.card-active .card-logo {
+    margin: 20px;
+    border-radius: 100%;
+    background-color: #5A20CB;
+    display: inline-block;
+    background-color: #fc535333;
+}
+
+.card-active .card-logo img {
+    width: 60px;
+    padding: 35px;
+}
+
+.card-active .card-content {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #5A20CB;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.card-active .card-content h3 {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.card-active .card-content p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.card  {
+    padding: 10px;
+    box-shadow: rgb(0 0 0 / 15%) 4px 4px 3.6px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card .card-logo img {
+    width: 60px;
+    padding: 35px;
+}
+
+.card .card-content {
+    margin-top: 20px;
+    padding: 10px;
+    /* background-color: red; */
+    text-align: center;
+    border-radius: 20px;
+    color: #1f1f1f;
+}
+
+.card .card-content h3 {
+    font-size: 22px;
+    padding: 5px;
+}
+
+.card .card-content p {
+    margin-top: 10px;
+    font-size: 16px;
+}

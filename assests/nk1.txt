@@ -1,0 +1,43 @@
+let storeData = JSON.parse(localStorage.getItem("RegisterData"));
+
+
+
+document
+
+  .getElementById("login-btn")
+
+  .addEventListener("click", function LoginData(event) {
+
+    var userData = document.getElementById("userData").value;
+
+    var userPass = document.getElementById("userPass").value;
+
+
+
+    for (let i = 0; i < storeData.length; i++) {
+
+
+      if (storeData[i].email == userData && storeData[i].Password == userPass) {
+
+        //+ storeData[i].id;
+
+        //     if (storeData[i].Password == userPass) {
+
+        alert( "u r login");
+        window.location.href = "window.location.host/to-do-list.html"; 
+        console.log("url updated");
+
+        //       //console.log("Login")
+
+        //     }
+
+        
+
+        break;
+
+
+      }
+    }
+
+     //alert("Email and Password is Incorrect!");
+  });
